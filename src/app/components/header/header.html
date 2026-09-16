@@ -1,0 +1,8 @@
+<div class="header">
+  <div class="header-logo">
+    <img class="logo" [src]="logo" alt="PlayStation">
+  </div>
+  <div class="header-menus">
+    @for (item of menus; track item) { <li>{{ item }}</li> }
+  </div>
+</div>

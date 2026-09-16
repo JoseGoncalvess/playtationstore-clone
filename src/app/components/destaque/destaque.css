@@ -1,0 +1,98 @@
+.destaque-app {
+  background: #fff;
+  padding: 32px 48px 48px;
+}
+
+.destaque-heading {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.destaque-heading h2 {
+  color: #1f1f1f;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.destaque-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.destaque-card {
+  aspect-ratio: 1 / 1;
+  background: #f1f1f1;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+.destaque-card:hover {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+.destaque-card img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Layout específico dos cards de opções. */
+:host-context(app-options) .destaque-app {
+  padding: 0;
+}
+
+:host-context(app-options) .destaque-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 956px;
+}
+
+:host-context(app-options) .destaque-card {
+  flex: 0 1 calc((100% - 30px) / 4);
+}
+
+:host-context(app-options) .destaque-card {
+  aspect-ratio: 1 / 1;
+  border-radius: 5px;
+}
+
+:host-context(app-options) .destaque-card img {
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  :host-context(app-options) .destaque-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .destaque-app {
+    padding-inline: 24px;
+  }
+
+  .destaque-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .destaque-app {
+    padding: 24px 16px 32px;
+  }
+
+  .destaque-grid {
+    gap: 12px;
+  }
+}

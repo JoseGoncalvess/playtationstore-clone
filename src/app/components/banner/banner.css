@@ -1,0 +1,90 @@
+.app-banner {
+  background: #fff;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
+  margin-top: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.app-banner-img {
+  height: clamp(220px, 27vw, 280px);
+  overflow: hidden;
+  width: 100%;
+}
+
+.app-banner-img img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.app-banner-title {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 48px 8px;
+}
+
+.app-banner-title p {
+  color: #4b4b4b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.app-banner-title button {
+  background: #0878d1;
+  border: 0;
+  border-radius: 18px;
+  color: #fff;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 14px;
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.app-banner-title button:hover {
+  background: #005aa7;
+  transform: translateY(-1px);
+}
+
+.app-header-description {
+  padding: 10px 48px 20px;
+}
+
+.app-header-description p {
+  color: #6a6a6a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .app-banner-img {
+    height: 220px;
+  }
+
+  .app-banner-title {
+    gap: 16px;
+    padding: 18px 24px 6px;
+  }
+
+  .app-banner-title p {
+    font-size: 17px;
+  }
+
+  .app-header-description {
+    padding: 8px 24px 18px;
+  }
+
+  .app-header-description p {
+    font-size: 11px;
+  }
+}

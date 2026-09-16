@@ -1,0 +1,22 @@
+<section class="show-list" aria-labelledby="show-list-title">
+  <div class="show-list-heading">
+    <h2 id="show-list-title">{{ title }}</h2>
+    <a href="#" class="show-list-link">Visualizar tudo</a>
+  </div>
+
+  <div class="show-list-carousel">
+    <div class="show-list-games">
+      @for (item of games; track item.img + item.title) {
+      <article class="game-card">
+        <img [src]="item.img" [alt]="item.title" loading="lazy" />
+        <div class="game-card-info">
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+          <strong>{{ item.value }}</strong>
+        </div>
+      </article>
+      }
+    </div>
+    <button class="carousel-button" type="button" aria-label="Ver mais jogos">›</button>
+  </div>
+</section>

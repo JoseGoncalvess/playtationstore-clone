@@ -1,0 +1,11 @@
+<section class="destaque-app" aria-labelledby="destaques-title">
+
+
+  <div class="destaque-grid">
+    @for (game of listItem; track game) {
+    <article class="destaque-card">
+      <img [src]="game" alt="Jogo em destaque" loading="lazy" />
+    </article>
+    }
+  </div>
+</section>
