@@ -2,6 +2,8 @@
 
 Projeto desenvolvido para fins exclusivamente educacionais como etapa de conclusão da trilha de aprendizagem **Triângulo**, realizada por meio da plataforma [Digital Innovation One (DIO)](https://www.dio.me/).
 
+![Conclusão da trilha Triângulo](public/assets/Trilha_Completa.png)
+
 A aplicação reproduz, de forma autoral e simplificada, a experiência visual de uma loja digital de jogos inspirada em padrões de interfaces da PlayStation Store. O objetivo foi praticar Angular, organização de componentes, estilização responsiva e construção de uma página composta por seções reutilizáveis.
 
 > Este projeto não possui vínculo oficial com a Sony Interactive Entertainment ou com a PlayStation. Marcas, nomes e referências visuais pertencem aos seus respectivos proprietários e foram utilizados apenas como referência de estudo.
@@ -169,6 +171,8 @@ npm test
 ## Resultado da trilha
 
 Este projeto representa o ponto de conclusão da trilha de aprendizagem e foi criado para demonstrar a aplicação prática dos conteúdos estudados. O foco principal foi transformar conceitos de Angular, componentes e estilização em uma interface funcional, organizada e visualmente consistente.
+
+![Prévia do aplicativo PlayStation Store Clone](public/assets/preview_project.png)
 
 ## Referências de estudo
 
